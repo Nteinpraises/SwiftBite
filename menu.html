@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – SwiftBite</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🍔</div>
+      <span class="logo-text">Swift<span>Bite</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="dark-toggle" title="Toggle dark mode">🌙</button>
+      <a href="contact.html" class="btn btn-primary">Order Now</a>
+    </div>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<div class="mobile-nav">
+  <button class="close-btn">✕</button>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<div class="page-header">
+  <h1>Our Menu</h1>
+  <p>Fresh meals, global flavours, prices that make sense</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>Menu</span>
+  </div>
+</div>
+
+
+<section class="section">
+  <div class="container">
+
+    
+    
+
+    
+    <div class="category-filters fade-in" id="categoryFilters">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="burgers"> Burgers</button>
+      <button class="filter-btn" data-cat="pizza"> Pizza</button>
+      <button class="filter-btn" data-cat="bbq"> BBQ</button>
+      <button class="filter-btn" data-cat="fastfood"> Fast Food</button>
+      <button class="filter-btn" data-cat="drinks"> Drinks</button>
+      <button class="filter-btn" data-cat="desserts"> Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      
+      <div class="food-card fade-in" data-cat="burgers">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Classic Smash Burger" />
+          <span class="food-tag">Bestseller</span>
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Burgers</div>
+          <h3>Classic Smash Burger</h3>
+          <p>Double smash patty, aged cheddar, pickles, onions, and our smoky house sauce on a toasted bun.</p>
+          <div class="food-footer">
+            <span class="food-price">$6.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="burgers" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80" alt="Double Bacon Burger" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Burgers</div>
+          <h3>Double Bacon Stack</h3>
+          <p>Two beef patties, crispy bacon, Swiss cheese, lettuce, tomato, and chipotle mayo.</p>
+          <div class="food-footer">
+            <span class="food-price">$9.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="burgers" data-delay="160">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80" alt="Spicy Chicken Burger" />
+          <span class="food-tag spicy"> Spicy</span>
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Burgers</div>
+          <h3>Spicy Chicken Burger</h3>
+          <p>Crispy marinated chicken thigh, jalapeños, sriracha slaw, and pickled onions.</p>
+          <div class="food-footer">
+            <span class="food-price">$7.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="food-card fade-in" data-cat="pizza">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" alt="Pepperoni Pizza" />
+          <span class="food-tag new">New</span>
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Pizza</div>
+          <h3>Loaded Pepperoni</h3>
+          <p>Triple mozzarella, crushed tomato base, stacked pepperoni, oregano drizzle.</p>
+          <div class="food-footer">
+            <span class="food-price">$11.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="pizza" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Margherita Pizza" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Pizza</div>
+          <h3>Classic Margherita</h3>
+          <p>San Marzano tomatoes, fresh buffalo mozzarella, hand-torn basil leaves, EVOO.</p>
+          <div class="food-footer">
+            <span class="food-price">$9.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="pizza" data-delay="160">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&q=80" alt="BBQ Chicken Pizza" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Pizza</div>
+          <h3>BBQ Chicken Pizza</h3>
+          <p>Smoky BBQ base, grilled chicken strips, red onion, cheddar and mozzarella blend.</p>
+          <div class="food-footer">
+            <span class="food-price">$12.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BBQ -->
+      <div class="food-card fade-in" data-cat="bbq">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80" alt="BBQ Ribs" />
+          <span class="food-tag">Fan Favourite</span>
+        </div>
+        <div class="food-body">
+          <div class="food-cat">BBQ</div>
+          <h3>Full Rack Pork Ribs</h3>
+          <p>Slow-smoked 6 hours, glazed in our house BBQ sauce, served with coleslaw and fries.</p>
+          <div class="food-footer">
+            <span class="food-price">$15.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="bbq" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80" alt="BBQ Chicken Wings" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">BBQ</div>
+          <h3>BBQ Chicken Wings (12pc)</h3>
+          <p>Hickory-smoked wings tossed in tangy BBQ sauce, served with blue cheese dip.</p>
+          <div class="food-footer">
+            <span class="food-price">$10.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="food-card fade-in" data-cat="fastfood">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&q=80" alt="Fried Chicken" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Fast Food</div>
+          <h3>Crispy Fried Chicken</h3>
+          <p>Southern spice blend, buttermilk soak, triple-dredged for maximum crunch.</p>
+          <div class="food-footer">
+            <span class="food-price">$8.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="fastfood" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&q=80" alt="Loaded Fries" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Fast Food</div>
+          <h3>Loaded Cheese Fries</h3>
+          <p>Thick-cut fries, cheddar cheese sauce, bacon bits, spring onion, sour cream.</p>
+          <div class="food-footer">
+            <span class="food-price">$5.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="fastfood" data-delay="160">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Hot Dog" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Fast Food</div>
+          <h3>Jumbo Classic Hot Dog</h3>
+          <p>100% beef frank, brioche bun, yellow mustard, relish, and diced white onion.</p>
+          <div class="food-footer">
+            <span class="food-price">$4.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="food-card fade-in" data-cat="drinks">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Milkshake" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Drinks</div>
+          <h3>Thick Vanilla Shake</h3>
+          <p>Real vanilla bean, whole milk, whipped cream, cherry on top. 600ml.</p>
+          <div class="food-footer">
+            <span class="food-price">$4.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="drinks" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=400&q=80" alt="Fresh Lemonade" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Drinks</div>
+          <h3>Freshly Squeezed Lemonade</h3>
+          <p>Hand-squeezed lemons, cane sugar syrup, sparkling water, mint. 500ml.</p>
+          <div class="food-footer">
+            <span class="food-price">$3.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="drinks" data-delay="160">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Iced Coffee" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Drinks</div>
+          <h3>Iced Caramel Latte</h3>
+          <p>Double espresso shot, oat milk, caramel drizzle, over ice. 400ml.</p>
+          <div class="food-footer">
+            <span class="food-price">$4.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="food-card fade-in" data-cat="desserts">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80" alt="Chocolate Cake" />
+          <span class="food-tag">Must Try</span>
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Desserts</div>
+          <h3>Dark Chocolate Lava Cake</h3>
+          <p>Warm molten centre, dusted with cocoa, served with vanilla bean ice cream.</p>
+          <div class="food-footer">
+            <span class="food-price">$6.49</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card fade-in" data-cat="desserts" data-delay="80">
+        <div class="food-img">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80" alt="Cheesecake" />
+        </div>
+        <div class="food-body">
+          <div class="food-cat">Desserts</div>
+          <h3>NY-Style Cheesecake</h3>
+          <p>Dense, creamy New York cheesecake on graham cracker crust, strawberry compote.</p>
+          <div class="food-footer">
+            <span class="food-price">$5.99</span>
+            <button class="food-order-btn">Order</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div id="emptyState" class="empty-state" style="display:none">
+      <p> No dishes found for "<span id="emptyQuery"></span>"</p>
+      <button onclick="resetSearch()" class="btn btn-outline" style="margin-top:16px">Clear search</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">🍔</div>
+          <span class="logo-text">Swift<span>Bite</span></span>
+        </div>
+        <p>Fast food that actually travels. Delivering hot, fresh meals to over 120 countries — starting from just $3.99.</p>
+      
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="menu.html">Burgers</a></li>
+          <li><a href="menu.html">Pizza</a></li>
+          <li><a href="menu.html">BBQ</a></li>
+          <li><a href="menu.html">Drinks</a></li>
+          <li><a href="menu.html">Desserts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p> 123 Street, Douala, CM</p><br/>
+        <p> +92 612 345 678</p><br/>
+        <p> hello@swiftbite.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SwiftBite. All rights reserved.</p>
+      <p>Made with for everyone everywhere.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
