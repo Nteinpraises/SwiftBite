@@ -1,10 +1,8 @@
-// ========================
-// DARK MODE
-// ========================
+
 const darkToggleBtns = document.querySelectorAll('.dark-toggle');
 const body = document.body;
 
-// Load saved preference
+
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark-mode');
   darkToggleBtns.forEach(btn => btn.textContent = '☀️');
@@ -19,9 +17,7 @@ darkToggleBtns.forEach(btn => {
   });
 });
 
-// ========================
-// BACK TO TOP
-// ========================
+
 const backToTopBtn = document.getElementById('backToTop');
 if (backToTopBtn) {
   window.addEventListener('scroll', () => {
@@ -37,9 +33,7 @@ if (backToTopBtn) {
   });
 }
 
-// ========================
-// MOBILE NAV
-// ========================
+
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
 const mobileCloseBtn = document.querySelector('.mobile-nav .close-btn');
@@ -63,9 +57,7 @@ if (hamburger && mobileNav) {
   });
 }
 
-// ========================
-// FADE IN ON SCROLL
-// ========================
+
 const fadeEls = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver((entries) => {
@@ -84,9 +76,6 @@ fadeEls.forEach((el, i) => {
   observer.observe(el);
 });
 
-// ========================
-// ACTIVE NAV LINK
-// ========================
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(link => {
   const href = link.getAttribute('href');
@@ -95,9 +84,7 @@ document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(link => {
   }
 });
 
-// ========================
-// NAVBAR SCROLL SHADOW
-// ========================
+
 const navbar = document.querySelector('.navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {

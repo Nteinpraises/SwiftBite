@@ -1,6 +1,4 @@
-// ========================
-// CONTACT FORM VALIDATION
-// ========================
+
 const form = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
@@ -18,7 +16,7 @@ function clearError(fieldId, errorId) {
   if (error) error.textContent = '';
 }
 
-// Clear errors on input
+
 ['name', 'email', 'subject', 'message'].forEach(id => {
   const field = document.getElementById(id);
   if (field) {
@@ -75,7 +73,7 @@ if (form) {
 
     if (hasError) return;
 
-    // Simulate submission
+    
     const submitBtn = form.querySelector('.submit-btn');
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;

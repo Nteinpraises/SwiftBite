@@ -1,6 +1,4 @@
-// ========================
-// MENU FILTERING
-// ========================
+
 const filterBtns = document.querySelectorAll('.filter-btn');
 const foodCards = document.querySelectorAll('.food-card');
 const emptyState = document.getElementById('emptyState');
@@ -56,9 +54,7 @@ function resetSearch() {
   applyFilters();
 }
 
-// ========================
-// ORDER BUTTON FEEDBACK
-// ========================
+
 document.querySelectorAll('.food-order-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const originalText = this.textContent;
